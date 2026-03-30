@@ -117,5 +117,13 @@
 
 
 # --------------------23/3/26---------------------
-need_transport=bool(input("Need"))
-print(int(need_transport))
+# need_transport=bool(input("Need"))
+# print(int(need_transport))
+
+
+# ----------------------30-3-26---------------------------
+# ***imp interview Q
+# def func(num):        the calling fun call this execution fun and execute the remaining statements 
+#     statements        
+# num=int(input())      due to default nature of execution of interpreter this will get execute 1st
+# func(num)             2nd execution line  this is calling fun
