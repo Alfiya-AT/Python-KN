@@ -89,7 +89,7 @@
 # binary rep
 # print((12&13))
 
-# --------------------------17-------------------------------
+# --------------------------17/3/26--------------------------
 # how to convert binary to decimal 
 # res=int("1101",2)
 # print(res)
@@ -116,7 +116,7 @@
 # greeting()
 
 
-# --------------------23/3/26---------------------
+# ----------------------23/3/26---------------------
 # need_transport=bool(input("Need"))
 # print(int(need_transport))
 
@@ -127,3 +127,13 @@
 #     statements        
 # num=int(input())      due to default nature of execution of interpreter this will get execute 1st
 # func(num)             2nd execution line  this is calling fun
+
+
+# ----------------------31-3-26-------------------------------
+
+# m=range(20)
+# print(m)
+# =>range(0,20)
+
+# for num  in m:
+    # print(num)
