@@ -137,3 +137,12 @@
 
 # for num  in m:
     # print(num)
+
+# -------------------1-4-26----------------------------------
+# .lower() mathod
+
+status=input("do u have membership?(yes/no): ").lower().strip()
+if status=="yes":
+    print("you can access")
+else:
+    print("you can not access")
