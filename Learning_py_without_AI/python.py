@@ -141,8 +141,50 @@
 # -------------------1-4-26----------------------------------
 # .lower() mathod
 
-status=input("do u have membership?(yes/no): ").lower().strip()
-if status=="yes":
-    print("you can access")
-else:
-    print("you can not access")
+# status=input("do u have membership?(yes/no): ").lower().strip()
+# if status=="yes":
+#     print("you can access")
+# else:
+#     print("you can not access")
+
+# -------------------1-4-26----------------------------------
+# .upper() mathod
+
+# status=input("do u have membership?(yes/no): ").upper().strip()
+# if status=="YES":
+#     print("you can access")
+# else:
+#     print("you can not access")
+
+# -------------------2-4-26----------------------------------
+# Augmented assignment operator
+
+
+# sum of first n natural numbers
+def sum_recursive(n):
+    if n == 0:          # base case — stop here!
+        return 0
+    return n + sum_recursive(n - 1)  # recursive call
+
+# sum_recursive(3) calls:
+# 3 + sum_recursive(2)
+# 3 + 2 + sum_recursive(1)
+# 3 + 2 + 1 + sum_recursive(0) → 0/
+
+
+# ----------------------
+def sum_builtin(n):
+    return sum(range(1, n + 1))
+
+# range(1, n+1) generates: 1, 2, 3, ..., n
+# sum() adds them all up
+# Python does it internally — very fast in practice
+
+from functools import reduce
+import operator
+# ----------------------
+def sum_reduce(n):
+    return reduce(operator.add, range(1, n + 1))
+
+# reduce applies add repeatedly:
+# add(add(add(1, 2), 3), 4) → 10
