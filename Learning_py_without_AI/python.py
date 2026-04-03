@@ -161,10 +161,10 @@
 
 
 # sum of first n natural numbers
-def sum_recursive(n):
-    if n == 0:          # base case — stop here!
-        return 0
-    return n + sum_recursive(n - 1)  # recursive call
+# def sum_recursive(n):
+#     if n == 0:          # base case — stop here!
+#         return 0
+#     return n + sum_recursive(n - 1)  # recursive call
 
 # sum_recursive(3) calls:
 # 3 + sum_recursive(2)
@@ -173,18 +173,21 @@ def sum_recursive(n):
 
 
 # ----------------------
-def sum_builtin(n):
-    return sum(range(1, n + 1))
+# def sum_builtin(n):
+#     return sum(range(1, n + 1))
 
 # range(1, n+1) generates: 1, 2, 3, ..., n
 # sum() adds them all up
 # Python does it internally — very fast in practice
 
-from functools import reduce
-import operator
+# from functools import reduce
+# import operator
 # ----------------------
-def sum_reduce(n):
-    return reduce(operator.add, range(1, n + 1))
+# def sum_reduce(n):
+#     return reduce(operator.add, range(1, n + 1))
 
 # reduce applies add repeatedly:
 # add(add(add(1, 2), 3), 4) → 10
+
+
+# =================================
