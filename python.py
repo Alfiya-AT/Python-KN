@@ -233,6 +233,21 @@
 
 
 # -------------9/4/26--------------------
+
+# List  =>Hetrogenies, duplicate, mutable n order is preserved 
+mylist=[1,1.4,'Alfiya',True]
+mylist.append("Kodnest")    #method
+print(len(mylist))          #function
+
+
+
+# Tuple =>*immutable
+mylist=(1,1.4,'Alfiya',True)
+print(mylist)   
+
+
+
+# -------------------------------10/4/26------------
 # reverse a num
 # num=244
 # res=0
