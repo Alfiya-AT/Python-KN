@@ -235,19 +235,19 @@
 # -------------9/4/26--------------------
 
 # List  =>Hetrogenies, duplicate, mutable n order is preserved 
-mylist=[1,1.4,'Alfiya',True]
-mylist.append("Kodnest")    #method
-print(len(mylist))          #function
+# mylist=[1,1.4,'Alfiya',True]
+# mylist.append("Kodnest")    #method
+# print(len(mylist))          #function
 
 
 
-# Tuple =>*immutable
-mylist=(1,1.4,'Alfiya',True)
-print(mylist)   
+# # Tuple =>*immutable
+# mylist=(1,1.4,'Alfiya',True)
+# print(mylist)   
 
 
 
-# -------------------------------10/4/26------------
+# -------------------------------10/4/26----------------------------------
 # reverse a num
 # num=244
 # res=0
@@ -272,3 +272,39 @@ print(mylist)
 #     i+=1
 #     print(res)
 # print(res)
+
+#------------------------------13/4/26------------------------------
+
+# does the py fun support multiple return val=> yes  only in py
+
+# def fun_name(a,b):
+#     sum=a+b
+#     diff=a-b
+#     return sum,diff
+
+# s,d=fun_name(2,3)
+# print(f"Sum:{s}\nDiff:{d}")
+
+# # it will return the res in the form of tuple if the res is stored in  single var
+
+# @ time of calling the fun the diff data type r passed hence its called dynamic  
+# res=fun_name(2.3,3.8)
+# print(res)
+
+
+# Types of arg
+# 1) positional arg
+# def cal(a,b):
+#     print(a+b)
+# cal(32,53)
+
+# 2) keyword arg
+# def wish(name,msg):
+#     print("hello",name,msg)
+
+# wish(msg="Gm",name="Alfiya")
+
+# wish("Alfiya",msg="Gm" )
+
+#**this will through error as the KWA is 1st so it hope for var for next val
+# wish(msg="Gm","Alfiya")  
