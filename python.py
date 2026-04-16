@@ -308,3 +308,27 @@
 
 #**this will through error as the KWA is 1st so it hope for var for next val
 # wish(msg="Gm","Alfiya")  
+
+
+
+# ----------------------------16/4/26-----------------------------
+#3) Default parameter 
+# def default(name="Alfiya",usn=12):
+#     print(f"Hiii {name} {usn}")
+
+# default()
+
+# default("A",3)  
+# default(usn=2,name="AAT")
+# it give more preriority to the positional or the keyword n it overide 
+
+
+# String in py
+# indexing n slicing 
+# used for file handling 
+
+# my_str="Alfiya"
+# print(my_str[33])   => string index out of range
+# print(my_str[1:4])
+# print(my_str[::]) => [0:0:1]
+# print(my_str[::-1])=> reverse from [n:0:-1]
