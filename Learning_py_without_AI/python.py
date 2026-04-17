@@ -161,10 +161,10 @@
 
 
 # sum of first n natural numbers
-def sum_recursive(n):
-    if n == 0:          # base case — stop here!
-        return 0
-    return n + sum_recursive(n - 1)  # recursive call
+# def sum_recursive(n):
+#     if n == 0:          # base case — stop here!
+#         return 0
+#     return n + sum_recursive(n - 1)  # recursive call
 
 # sum_recursive(3) calls:
 # 3 + sum_recursive(2)
@@ -173,18 +173,185 @@ def sum_recursive(n):
 
 
 # ----------------------
-def sum_builtin(n):
-    return sum(range(1, n + 1))
+# def sum_builtin(n):
+#     return sum(range(1, n + 1))
 
 # range(1, n+1) generates: 1, 2, 3, ..., n
 # sum() adds them all up
 # Python does it internally — very fast in practice
 
-from functools import reduce
-import operator
+# from functools import reduce
+# import operator
 # ----------------------
-def sum_reduce(n):
-    return reduce(operator.add, range(1, n + 1))
+# def sum_reduce(n):
+#     return reduce(operator.add, range(1, n + 1))
 
 # reduce applies add repeatedly:
 # add(add(add(1, 2), 3), 4) → 10
+
+
+# ----------------------------7/4/26-------------------------------------
+# fibonacci  n simultanious assignment operator
+# a,b=0,1
+# print(f"{a}\n{b}")
+# N=4
+# if N<=0:
+#     print("enter +ve no")
+# elif N==1:
+#     print("0")
+# else:
+
+#     for i in range(2,N):
+#         a,b=b,a+b
+#         print(b)
+
+
+# --------------------------8/4/26---------------------------------------
+
+# break statement => it is useed in looping statements if use it some where else it will show syntax error 
+# -----------------***imp IV
+# num=10
+# if num>40:
+#     print("statement1")
+#     break
+# print("hello")
+
+
+# continue 
+
+# for i in range(10):
+#     if i%2==0:
+#         continue
+#     print(i)
+
+
+# pass
+
+# if True:
+#     pass
+# print("false")
+
+
+# -------------9/4/26--------------------
+
+# List  =>Hetrogenies, duplicate, mutable n order is preserved 
+# mylist=[1,1.4,'Alfiya',True]
+# mylist.append("Kodnest")    #method
+# print(len(mylist))          #function
+
+
+
+# # Tuple =>*immutable
+# mylist=(1,1.4,'Alfiya',True)
+# print(mylist)   
+
+
+
+# -------------------------------10/4/26----------------------------------
+# reverse a num
+# num=244
+# res=0
+# while num>0:
+#     rem=num%10
+#     num=num//10
+#     res=(res*10)+(rem)
+# print(res)
+
+# product of all even num
+# num=4
+# i=1
+# res=0
+# print(res)
+# while i<=num:
+#     print(res)
+#     if i%2==0:
+#         res+=i
+#         print(res)
+#     # else:
+#     #     continue
+#     i+=1
+#     print(res)
+# print(res)
+
+#------------------------------13/4/26------------------------------
+
+# does the py fun support multiple return val=> yes  only in py
+
+# def fun_name(a,b):
+#     sum=a+b
+#     diff=a-b
+#     return sum,diff
+
+# s,d=fun_name(2,3)
+# print(f"Sum:{s}\nDiff:{d}")
+
+# # it will return the res in the form of tuple if the res is stored in  single var
+
+# @ time of calling the fun the diff data type r passed hence its called dynamic  
+# res=fun_name(2.3,3.8)
+# print(res)
+
+
+# Types of arg
+# 1) positional arg
+# def cal(a,b):
+#     print(a+b)
+# cal(32,53)
+
+# 2) keyword arg
+# def wish(name,msg):
+#     print("hello",name,msg)
+
+# wish(msg="Gm",name="Alfiya")
+
+# wish("Alfiya",msg="Gm" )
+
+#**this will through error as the KWA is 1st so it hope for var for next val
+# wish(msg="Gm","Alfiya")  
+
+
+
+# ----------------------------16/4/26-----------------------------
+#3) Default parameter 
+# def default(name="Alfiya",usn=12):
+#     print(f"Hiii {name} {usn}")
+
+# default()
+
+# default("A",3)  
+# default(usn=2,name="AAT")
+# it give more preriority to the positional or the keyword n it overide 
+
+
+# String in py
+# indexing n slicing 
+# used for file handling 
+
+
+
+# my_str="Alfiya"
+
+# print(my_str[1:4])
+# print(my_str[::]) => [0:0:1]
+# print(my_str[::-1])=> reverse from [n:0:-1]
+
+
+# --------------------------------17/4/26---------------------------------
+my_str='Pizza'
+# no error 
+# print(my_str[16:])   
+
+# => string index out of range
+# print(my_str[33])   
+
+# Concatenation 
+# print('a'+'b')
+# print('a'*4)
+
+# inbuild Functions
+
+# print(len(my_str))
+
+# membership operator => IN, NOT IN 
+
+# print('izz' in my_str)
