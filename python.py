@@ -327,8 +327,31 @@
 # indexing n slicing 
 # used for file handling 
 
+
+
 # my_str="Alfiya"
-# print(my_str[33])   => string index out of range
+
 # print(my_str[1:4])
 # print(my_str[::]) => [0:0:1]
 # print(my_str[::-1])=> reverse from [n:0:-1]
+
+
+# --------------------------------17/4/26---------------------------------
+my_str='Pizza'
+# no error 
+# print(my_str[16:])   
+
+# => string index out of range
+# print(my_str[33])   
+
+# Concatenation 
+# print('a'+'b')
+# print('a'*4)
+
+# inbuild Functions
+
+# print(len(my_str))
+
+# membership operator => IN, NOT IN 
+
+# print('izz' in my_str)
