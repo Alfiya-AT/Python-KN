@@ -337,7 +337,7 @@
 
 
 # --------------------------------17/4/26---------------------------------
-my_str='Pizza'
+# my_str='Pizza'
 # no error 
 # print(my_str[16:])   
 
@@ -353,5 +353,24 @@ my_str='Pizza'
 # print(len(my_str))
 
 # membership operator => IN, NOT IN 
-
+# used to check the char is present in other str or not
 # print('izz' in my_str)
+
+
+
+# ---------------------------22/4/26----------------------
+
+# functions
+# print(len('alfiya at'))
+# len function include the num of cha r including the space 
+
+
+# print("Hi">"Bye")
+# print("hi">"Bye")
+# print("Hi">"bye")
+
+
+# it depends on ascii val A=65 a=97
+# print("A">"a")  
+# print("a">"A")
+# print("a">"a")
