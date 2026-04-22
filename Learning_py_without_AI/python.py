@@ -374,3 +374,14 @@
 # print("A">"a")  
 # print("a">"A")
 # print("a">"a")
+
+
+# unicode 
+# all the char for all lang r hv some code 
+
+# s = "अल्फिया"
+# for ch in s:
+#     print(ch, hex(ord(ch)))
+
+# ASCII
+# only certain char r hv some standard val 
