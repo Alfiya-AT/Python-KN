@@ -390,15 +390,22 @@
 
 # ---------------------------------23/4/26----------------------
 
-s1='alfiya'
+# s1='alfiya'
 # print(s1.find('g'))
 # if not found it will return -1
 
 # print(s1.index('g'))
 # this will return error
 
-s1='Tamboli'
-print(id(s1))
+# s1='Tamboli'
+# print(id(s1))
 # shadow problem 
-s2='Tamboli'
-print(id(s2))
+# s2='Tamboli'
+# print(id(s2))
+
+# -------------------------24/4/26--------------
+# *** imp IV
+# str_t=(6)
+# tuple_t=(3,)
+# print(type(str_t))   => int 
+# print(type(tuple_t))  => tuple
