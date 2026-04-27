@@ -409,3 +409,32 @@
 # tuple_t=(3,)
 # print(type(str_t))   => int 
 # print(type(tuple_t))  => tuple
+
+# -------------------------27/4/26-------------------
+# replace will just replace value n create new str but does not modify the orignal str
+
+orignal="py is difficult"
+# string=orignal.replace("difficult","easy")
+# print(orignal)
+# print(string)
+
+# # location of var 
+# print(id(orignal))
+# print(id(string))
+
+# rfind()  from right
+# print(orignal.rfind('f'))
+
+# print(orignal.split("-"))
+
+tup=("A","B","c")
+print(type(tup))
+# print(".".join(tup))
+# print(tup)
+
+# str1="python"
+# str2="12345"
+# # str3=str1.join(str2)
+# str3="-".join(str2)
+# print(str3)
+
