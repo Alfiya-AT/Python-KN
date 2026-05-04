@@ -413,7 +413,7 @@
 # -------------------------27/4/26-------------------
 # replace will just replace value n create new str but does not modify the orignal str
 
-orignal="py is difficult"
+# orignal="py is difficult"
 # string=orignal.replace("difficult","easy")
 # print(orignal)
 # print(string)
@@ -427,14 +427,85 @@ orignal="py is difficult"
 
 # print(orignal.split("-"))
 
-tup=("A","B","c")
-print(type(tup))
+# tup=("A","B","c")
+
+# tup=str([1,2,3])
+# print("".join(tup))
+
+# print(type(tup))
 # print(".".join(tup))
 # print(tup)
 
 # str1="python"
 # str2="12345"
-# # str3=str1.join(str2)
+# str3=str1.join(str2)
 # str3="-".join(str2)
 # print(str3)
+# in str it access each char wrt to index
+# =>1-2-3-4-5
 
+# ---------------------------------28/4/26---------------------
+
+# tup=("a","l","2")
+# print("-".join(tup))
+
+
+
+# -------------------------
+# eval is readablebuffer  
+# numb=eval(input("operation"))    #valid expression 
+# print(numb)
+# 3+5=>8
+
+# generator  :  
+
+l=[2,4,5]
+
+# print(l)
+# print(l+l)
+# print(l*3)
+# print(4 in l)
+# print(l[:7])
+
+
+# mutable methods of list class
+# add at end
+l.append(8)
+print(l)
+# copy
+c=l.copy()
+print(c)
+# clear
+l.clear()
+print(l)
+# insert specific sequence index
+l.insert(1,c)
+# extend
+l.extend(((4, 5),7))
+l.extend({4, 5})
+
+# VIMP IMP  ***** 
+l.extend("abcd")
+print(l)
+# [[2, 4, 5, 8], (4, 5), 7, 4, 5, 'a', 'b', 'c', 'd']
+# iteratives 
+# iterables An iterable is any object you can loop over (iterate through)
+# doing same task again n again 
+# concat
+l=l+[104,9,4,8]
+print(l)
+
+l.pop()
+print(l)
+# [[2, 4, 5, 8], (4, 5), 7, 4, 5, 'a', 'b', 'c', 'd', 104]
+
+
+# remove first occurance only 
+l.remove(4)
+print(l)
+
+
+# its case sensitive 
+l.extend(['Kodnest','kodnest'])
+l.remove('kodnest')
+print(l)
