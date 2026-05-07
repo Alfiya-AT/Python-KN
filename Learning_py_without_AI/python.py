@@ -121,6 +121,24 @@
 # print(int(need_transport))
 
 
+# -------------------------27-3-26----------------------
+
+# num1=int(input('num1: '))
+# num2=int(input('num2: '))
+
+# if num1>num2:
+#     print("num1 is greater number")
+# elif num1<num2:
+#     print("num2 is greater than num1")
+# else:
+#     print("num1 is equal to num2")
+
+
+# if num1>=1 and num1<=100:
+#     print("True")
+# else:
+#     print("False")
+
 # ----------------------30-3-26---------------------------
 # ***imp interview Q
 # def func(num):        the calling fun call this execution fun and execute the remaining statements 
@@ -147,6 +165,8 @@
 # else:
 #     print("you can not access")
 
+
+
 # -------------------1-4-26----------------------------------
 # .upper() mathod
 
@@ -155,6 +175,8 @@
 #     print("you can access")
 # else:
 #     print("you can not access")
+
+
 
 # -------------------2-4-26----------------------------------
 # Augmented assignment operator
@@ -272,6 +294,8 @@
 #     i+=1
 #     print(res)
 # print(res)
+
+
 
 #------------------------------13/4/26------------------------------
 
@@ -403,12 +427,16 @@
 # s2='Tamboli'
 # print(id(s2))
 
+
+
 # -------------------------24/4/26--------------
 # *** imp IV
 # str_t=(6)
 # tuple_t=(3,)
 # print(type(str_t))   => int 
 # print(type(tuple_t))  => tuple
+
+
 
 # -------------------------27/4/26-------------------
 # replace will just replace value n create new str but does not modify the orignal str
@@ -444,6 +472,8 @@
 # in str it access each char wrt to index
 # =>1-2-3-4-5
 
+
+
 # ---------------------------------28/4/26---------------------
 
 # tup=("a","l","2")
@@ -459,7 +489,7 @@
 
 # generator  :  
 
-l=[2,4,5]
+# l=[2,4,5]
 
 # print(l)
 # print(l+l)
@@ -470,42 +500,87 @@ l=[2,4,5]
 
 # mutable methods of list class
 # add at end
-l.append(8)
-print(l)
-# copy
-c=l.copy()
-print(c)
-# clear
-l.clear()
-print(l)
-# insert specific sequence index
-l.insert(1,c)
-# extend
-l.extend(((4, 5),7))
-l.extend({4, 5})
+# l.append(8)
+# print(l)
+# # copy
+# c=l.copy()
+# print(c)
+# # clear
+# l.clear()
+# print(l)
+# # insert specific sequence index
+# l.insert(1,c)
+# # extend
+# l.extend(((4, 5),7))
+# l.extend({4, 5})
 
-# VIMP IMP  ***** 
-l.extend("abcd")
-print(l)
-# [[2, 4, 5, 8], (4, 5), 7, 4, 5, 'a', 'b', 'c', 'd']
-# iteratives 
-# iterables An iterable is any object you can loop over (iterate through)
-# doing same task again n again 
-# concat
-l=l+[104,9,4,8]
-print(l)
+# # VIMP IMP  ***** 
+# l.extend("abcd")
+# print(l)
+# # [[2, 4, 5, 8], (4, 5), 7, 4, 5, 'a', 'b', 'c', 'd']
+# # iteratives 
+# # iterables An iterable is any object you can loop over (iterate through)
+# # doing same task again n again 
+# # concat
+# l=l+[104,9,4,8]
+# print(l)
 
-l.pop()
-print(l)
-# [[2, 4, 5, 8], (4, 5), 7, 4, 5, 'a', 'b', 'c', 'd', 104]
-
-
-# remove first occurance only 
-l.remove(4)
-print(l)
+# l.pop()
+# print(l)
+# # [[2, 4, 5, 8], (4, 5), 7, 4, 5, 'a', 'b', 'c', 'd', 104]
 
 
-# its case sensitive 
-l.extend(['Kodnest','kodnest'])
-l.remove('kodnest')
-print(l)
+# # remove first occurance only 
+# l.remove(4)
+# print(l)
+
+
+# # its case sensitive 
+# l.extend(['Kodnest','kodnest'])
+# l.remove('kodnest')
+# print(l)
+
+
+
+# ------------------------------------7/5/26-----------------------
+
+# l=[2,4,5]
+
+# ____pop by index____
+# print(l)
+# l.pop()  # Remove last element 
+# print(l)
+
+# _____ordering the elements in the list_____
+#1. sort() method => it will sort the list in ascending order by default
+
+# l1=["cherry","banana","apple"] 
+# => ['apple', 'banana', 'cherry']
+
+# l1=[20,40,'Python',10,True]  
+# => error as we can not compare '<' int with str 
+
+# l1.sort()  
+# print(l1)
+
+#2 reverse() method => it will reverse the list
+
+# l2=[20,40,'Python',10,True]
+
+# method
+# l2.reverse()
+# print(l2)
+
+# function
+# reversed(l2)
+# print(l2)
+
+# ____tuple____
+tup=(1,2,3,"kodnest",39)
+print(tup[0])
+
+tup=("kodnest")
+print(type(tup))
+
+l=[1]
+print(type(l))
