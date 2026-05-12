@@ -576,11 +576,55 @@
 # print(l2)
 
 # ____tuple____
-tup=(1,2,3,"kodnest",39)
-print(tup[0])
+# tup=(1,2,3,"kodnest",39)
+# print(tup[0])
 
-tup=("kodnest")
-print(type(tup))
+# tup=("kodnest")
+# print(type(tup))
 
-l=[1]
-print(type(l))
+# l=[1]
+# print(type(l))
+
+
+# ------------------------8/5/26-----------------------
+
+# t=10,
+# print(type(t))
+
+# a=23
+# b=5
+# c=65
+# d=44
+
+# tuple packing
+# t1=(a,b,c,d)
+# print(t1)
+
+# tuple unpacking
+# a,b,c,d=t1
+# print(a)
+# print(b)
+# print(c)
+# print(d)
+
+
+
+# Q.wrt prg to take ip  from user as tuple of numbers n print its sum n avg
+
+
+tuple1=eval(input("Enter a tuple of numbers: "))
+total_length=len(tuple1)
+print("Tuple of numbers:", tuple1)
+
+# total_sum=sum(tuple1)
+# print("Sum:", total_sum)
+
+# or 
+
+totalSum=0
+for i in tuple1:
+    totalSum+=i
+print("Sum:", totalSum)
+
+average=totalSum/total_length
+print("Average:", average)
