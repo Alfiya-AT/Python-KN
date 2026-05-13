@@ -612,19 +612,39 @@
 # Q.wrt prg to take ip  from user as tuple of numbers n print its sum n avg
 
 
-tuple1=eval(input("Enter a tuple of numbers: "))
-total_length=len(tuple1)
-print("Tuple of numbers:", tuple1)
+# tuple1=eval(input("Enter a tuple of numbers: "))
+# total_length=len(tuple1)
+# print("Tuple of numbers:", tuple1)
 
-# total_sum=sum(tuple1)
-# print("Sum:", total_sum)
+# # total_sum=sum(tuple1)
+# # print("Sum:", total_sum)
 
-# or 
+# # or 
 
-totalSum=0
-for i in tuple1:
-    totalSum+=i
-print("Sum:", totalSum)
+# totalSum=0
+# for i in tuple1:
+#     totalSum+=i
+# print("Sum:", totalSum)
 
-average=totalSum/total_length
-print("Average:", average)
+# average=totalSum/total_length
+# print("Average:", average)
+
+
+# l=[3,3,6,1,2]
+# print(set(l))
+
+
+# if user input is 3,4,5 then use eval
+# number_list=eval((input("Enter a list of numbers: ")))
+# l=(list(number_list))
+# n=len(l)
+# sum_list=sum(l)
+# print(sum_list)
+
+# if user input is 3 4 5 then use eval
+# number_list=input("Enter a list of numbers: ").split()
+# print(number_list)
+
+# n=len(number_list)
+# # sum_list=sum(int(num) for num in number_list)    O(n)
+# print(sum_list/n)
