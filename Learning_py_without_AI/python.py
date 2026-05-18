@@ -648,3 +648,112 @@
 # n=len(number_list)
 # # sum_list=sum(int(num) for num in number_list)    O(n)
 # print(sum_list/n)
+
+
+# numbers=input("Enter the val")
+# print(numbers)
+# numbers_list=numbers.split()
+# print(numbers_list)
+# int_list=[]
+# for num in numbers_list:
+#     int_list.append(int(num))
+
+# print(int_list[::-1])
+
+# --------------------------18/5/26--------------
+
+# set1={10,20,30,40,50}
+# print(set1)
+# print(type(set1))
+
+
+# this is a dict
+# set2={}
+# print(set2)
+# print(type(set2))
+
+# ---------------create empty set-------------------
+#creating empty set
+# set2=set()
+# print(set2)
+# print(type(set2))
+
+# --------converting from datatype to set -----------
+# converting list to set
+# lst=[22,45,22,13,29]
+# set3=set(lst)
+# print(set3)
+# =>{13, 29, 45, 22}
+
+# ------------creating------
+# : neither random nor perfectly sorted — it's hash-ordered 4 memory
+# set4=set(range(1,11))
+# print(set4)
+
+
+# ***diff bw update n add
+# ------------add---------
+# set operations
+# add used to add single element
+# # set4.add(True)
+
+# ----------update------
+# to add multiple value
+# set4={10,20,30,40}
+# list4=[50,60,70,10]
+# set4.update(list4,range(5))
+# print(set4)
+# =>{0, 1, 2, 3, 4, 70, 40, 10, 50, 20, 60, 30}
+
+
+# ----------copy-------
+# set5={40,89,True,20.34}
+# set6=set5.copy()
+# print(set6)
+# =>{40, 89, 20.34, True}
+
+
+
+# ***diff bw pop , remove,  discard
+# ----------pop---------
+# set7={40, 30, 50, 30}
+# print(set7)
+# # remove the random element
+# set7.pop()
+# print(set7)
+
+# ---------remove---------
+# set7={40, 30, 50, 30}
+# set7.remove(30)
+# print(set7)
+# => {40, 50}
+
+
+# set7.remove(100)
+# print(set7)
+# KeyError error if element is not present in set
+
+# ---------------discard--------------
+
+# it  will not throw any error if the element is not present
+# it ele is not present then it will not perform any type of operation
+# set7={40, 30, 50, 30}
+# set7.discard(100)
+# print(set7)
+
+# ----------------clear----------------
+
+# set7.clear()
+# print(set7)
+
+# math operation on set
+
+# 1.Union
+# set1={10,20,30,40,50}
+# set2={60,70,30,40,50}
+# set3=set1.union(set2)
+# print(set3)
+# 
+# # 2.intersection
+# set4=set1.intersection(set2)
+# print(set4)
