@@ -757,3 +757,15 @@
 # # 2.intersection
 # set4=set1.intersection(set2)
 # print(set4)
+
+
+
+# ---------------------25/5/26-------------------------
+
+# set1={10,20,30,40}
+# set2={30,40,50,60}
+
+# print(set1.difference(set2))
+# print(set1-set2)
+
+
