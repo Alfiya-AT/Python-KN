@@ -769,3 +769,36 @@
 # print(set1-set2)
 
 
+
+# ------------------26/5/26----------------------------
+
+# dictionary
+
+
+# count={}
+# sentence=input()
+# sentence_list=sentence.split()
+# print(sentence)
+# for char in sentence_list:
+#     count[char]=count.get(char,0)+1
+# print(count)
+
+# print(True)
+
+
+# -------------------------29/5/26------------------
+
+# type of arguments 
+# => variable len arg 
+
+
+# how u will declare varaible len arg 
+def add(*args):
+    print(args)
+    for arg in args:
+        if type(arg) == int:
+            print(arg,end=" ")
+
+add(23,43,True,"Hello")
+
+# keyword arg 
