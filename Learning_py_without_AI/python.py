@@ -790,15 +790,82 @@
 
 # type of arguments 
 # => variable len arg 
-
+# 1)positional
 
 # how u will declare varaible len arg 
-def add(*args):
-    print(args)
-    for arg in args:
-        if type(arg) == int:
-            print(arg,end=" ")
+# def add(*args):
+#     print(args)
+#     for arg in args:
+#         if type(arg) == int:
+#             print(arg,end=" ")
 
-add(23,43,True,"Hello")
+# add(23,43,True,"Hello")
 
-# keyword arg 
+
+# def fun(a,b,*args):
+#     print(args)
+#     for val in args:
+#         if type(val) == int:
+#             print(val)
+
+# fun(10,True,"df",23,34.33,45,'34')
+
+
+
+
+# ----------------------------3/6/26-------------
+
+# 2) keyword arg 
+
+
+
+# diff bw args n kwargs 
+
+# -> args op is in form of tuple 
+# ->kwargs op is in the form of dictionary
+
+
+# def fun(**kwargs):
+#     print(kwargs)
+# fun(nums1=[1,2,2,1],nums2=[2,2],a=23)
+#
+
+# combination with parameter
+# def fun(a,b,**kwargs):
+#     print(a,b)
+#     print(kwargs)
+#
+# # this is normal passing where the val is first assign to the extra para define in the function call  then remaing to the kwargs
+# fun(34,54)
+# fun(nums1=[1,2,2,1],nums2=[2,2],a=23,b=34)
+
+#combination of args+normal para+kwargs
+
+# def fun(*args,a,b,**kwargs):
+#     print(args)
+#     print(a,b)
+#     print(kwargs)
+#
+# # if args is at 1st then val r consider as part of args
+# fun(2,3,4,True,a=12,b=33,x=345,y='sd')
+
+
+# =>
+# (2, 3, 4, True)
+# 12 33
+# {'x': 345, 'y': 'sd'}
+
+
+
+# py is
+# functional prog lang
+# script
+# oops
+
+
+# imp feature of py 
+# returning multiple values 
+
+# def fun(a,b,c):
+#     return a,b,c
+# print(fun(3,4,2))
