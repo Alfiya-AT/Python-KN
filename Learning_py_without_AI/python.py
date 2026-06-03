@@ -869,3 +869,51 @@
 # def fun(a,b,c):
 #     return a,b,c
 # print(fun(3,4,2))
+
+# py can return multiple class , obj , n paramrets 
+
+
+
+
+
+
+
+
+
+# list comprehension
+# [expression for item in iterables if condition ]
+
+
+
+# list1=(10,20,30,40)
+# for num in list1:
+#     print(num**2)
+
+# list2=[num**2 for num in list1]
+# print(list2)
+
+# print([num**2 for num in list1])
+
+# print([[0] for letter in "python"])
+# =>[[0], [0], [0], [0], [0], [0]]
+# print([letter for letter in "python"])
+
+
+# list=[item for item in range(1,6)]
+# print(list)
+# print(type(list))
+# =><class 'list'>
+
+# tuple=(item for item in range(1,6))
+# print(tuple)
+# print(type(tuple))
+# # =><class 'generator'>
+
+# imp*** diff bw list n tuple comprehension
+# data type of tuple comprehension is generator y??
+
+
+# 
+# string_list = [x for x in "a34&!fd37" if x.isalpha() ]
+# print(string_list)
+# 
