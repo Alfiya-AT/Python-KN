@@ -877,9 +877,6 @@
 
 
 
-
-
-
 # list comprehension
 # [expression for item in iterables if condition ]
 
@@ -904,10 +901,13 @@
 # print(type(list))
 # =><class 'list'>
 
+
+# tuple comprehension is not there it will give some result through 
 # tuple=(item for item in range(1,6))
 # print(tuple)
+
 # print(type(tuple))
-# # =><class 'generator'>
+# =><class 'generator'>
 
 # imp*** diff bw list n tuple comprehension
 # data type of tuple comprehension is generator y??
@@ -917,3 +917,65 @@
 # string_list = [x for x in "a34&!fd37" if x.isalpha() ]
 # print(string_list)
 # 
+
+
+
+# -------------------------4/6/26------------------
+
+# def fun(*args):
+#     unique_list=list(set(args))
+#     unique_list.sort()
+#     return unique_list
+# s= "3 4 5 6 6"
+# l=s.split()
+# list1=[int(x) for x in l ]
+# print(l)
+# print(fun(*list1))
+
+
+# iterator in py 
+
+# *** how does loop work internally
+# => loops use 2 fun called next and iter function n execute the loop till it reach last element once it reach last ele it will through exception
+# list1 = [1,2,3,4]
+# # for i in list1:
+# #     print(i)
+#
+# # this is used to inisalize a
+# ele = iter(list1)
+# print(next(ele))
+# print(next(ele))
+# print(next(ele))
+# print(next(ele))
+# # once it reach the last ele it will through StopIteration  exception
+# print(next(ele))
+
+
+# in set the insertion order is not preserved hence when set is called it can return some thing just randomly
+# set1 = {12,32,1}
+# ele = iter(set1)
+# print(next(ele))
+# print(next(ele))
+
+
+# dict1={1:10,2:20,3:30,4:40,5:50}
+# ele=iter(dict1)
+# k=next(ele)
+# print("key",k)
+# print("value",dict1[k])
+
+
+# r=range(5,10)
+# print(r)
+# ele=iter(r)
+# print(next(ele))
+
+
+# $$print function is created using variable len args
+
+# range is created using generator but it has its own class called range
+# generator are predefined class 
+
+# r=range(2)
+# print(type(r))
+# <class 'range'>
