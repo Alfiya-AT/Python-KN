@@ -902,7 +902,7 @@
 # =><class 'list'>
 
 
-# tuple comprehension is not there it will give some result through 
+# tuple comprehension is not there it will give some result through generator class
 # tuple=(item for item in range(1,6))
 # print(tuple)
 
@@ -940,7 +940,9 @@
 # list1 = [1,2,3,4]
 # # for i in list1:
 # #     print(i)
-#
+
+
+
 # # this is used to inisalize a
 # ele = iter(list1)
 # print(next(ele))
@@ -979,3 +981,148 @@
 # r=range(2)
 # print(type(r))
 # <class 'range'>
+
+
+
+# -----------------------5/6/26---------------------------
+
+# Generator 
+#  this are used to create obj in py
+
+
+# can we create are own iterator function???
+# => No it can be use to iterate over obj but we cannot crete bcz it is predefine function 
+
+
+# +++++++++++++++++++++++++++++++++++++++++++
+# Vimp *****                                + 
+                                          # +
+# how range is able to generates a value    +
+# =>using generators                        +
+#                                           +
+#  Can we create our own generator ??]      +
+#=> Yes       using yield                   +
+                                          # + 
+# +++++++++++++++++++++++++++++++++++++++++++
+
+
+
+# Generator 
+
+
+# def my_range(n):
+#     i=0
+#     while i<n:
+#         yield i
+#         i+=1
+
+# res=my_range(4)
+# print(next(res))
+# print(next(res))
+# print(next(res))
+# print(next(res))
+
+
+
+# range function use iterator to iterate the ele in it and the result value are build using the generator
+
+
+# def my_range(n):
+#     i=0
+#     while i<n:
+#         yield i
+#         i+=1
+#
+# res=my_range(4)
+# print(next(res))
+# print(next(res))
+# print(next(res))
+#
+#
+
+
+# def num():
+#     return [1,2,3]
+#
+# res=num()
+# r=iter(res)
+# print(next(r))
+
+# in for/loop the memory allocation happens at once while in generator the memory allocation happen one by one
+
+# using yield keyword we can be able to generate a val
+# def num():
+#     yield 1
+#     yield 2
+#     yield 1
+#     yield 2
+# res=num()
+#
+# # whole command will be in our hand
+# for i in res:
+#     print(i)
+
+# def days():
+#
+#     l1=['Sun','Mon','Tue','Wed','Thu','Fri','Sat']
+#     i=0
+#     while True:
+#         yield l1[i]
+#         i=(i+1)%7
+#
+# res=days()
+# for i in res:
+#     print(next(res))
+
+
+# def month():
+#     year = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','sep','Oct','Nov','Dec']
+#     i=0
+#     quater_list=[]
+#     for i in range(0,len(year),3):
+#         quater_list.append(list(year[i:i+3]))
+#     print(quater_list)
+#     while True:
+#         yield year[i]
+#         i=(i+1)%(len(year))
+#         i+=1
+
+
+# def mon():
+#     year ={'Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','sep','Oct','Nov','Dec'}
+#     i=0
+    # quater_list=[]
+    # for i in range(0,len(year),3):
+    #     quater_list.append(list(year[i:i+3]))
+
+    # print(quater_list)
+    # while True:
+    #     for month in year:
+    #         yield month
+
+
+        # yield year[i]
+        # i=(i+1)%(len(year))
+        # i+=1
+
+
+# result=mon()
+# print(next(result))
+
+
+
+# types of varaible
+# local/global var
+# b=25.6
+# def fun():
+#     a = 10
+#     # global b
+#     # b=b+1
+#     print("This is a local var",a)
+#     print("This is a global var", b)
+# fun()
+# print("This is a global modified b var",b)
+
+# a is local var n b is global
+# a can be access in side only the function 
+# b can be access from anywhere 
