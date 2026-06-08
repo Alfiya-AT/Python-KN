@@ -1038,7 +1038,7 @@
 # print(next(res))
 # print(next(res))
 #
-#
+
 
 
 # def num():
@@ -1126,3 +1126,96 @@
 # a is local var n b is global
 # a can be access in side only the function 
 # b can be access from anywhere 
+
+
+
+
+
+# ---------------------------8/6/26-------------------------------
+
+# local/global var
+# this is stored in heap of RAM
+# b=25.6
+
+# this block of code is stored in temp in stack of RAM once the function block end the memory get deallocated
+# def fun():
+#     # this is stored in stack of RAM
+#     a = 10
+#     # it is actually creating one more obj as b in the code block as b
+#     b=1
+#     print("This is a local var",a)
+#     print("This is a global var inside the code block", b)
+#
+# fun()
+# print("This is a global var b outside the code block ",b)
+#
+
+# can we able access the modified  global var outside the code block => no
+
+#  to change the global var we use keyword
+# =>global
+
+
+
+
+
+# b = 25
+#
+# def fun():
+#     global b
+#     # to modify the value of the global var  in side a block of code / local
+#     # this is stored in stack of RAM
+#     a = 10
+#     # this is stored in heap of RAM
+#     b = 1
+#     print("This is a local var", a)
+#     print("This is a modified global var inside the code block", b)
+#
+# fun()
+# print("This is a global var b outside the code block but got modify due to global keyword used inside the code block ", b)
+
+
+
+# to check how many local n global var r there in code
+# =>locals() ,  globals()
+
+# ***imp
+#
+# a,b,c=23.4,True,"Alfiya"
+# def fun():
+#     a, b, c = 2,3,1
+#     print("locals",locals())
+#     print("locals", globals())
+#
+#
+# fun()
+
+
+
+# Recursion => fun call it self
+
+
+# def fun(n):
+#     if n>0:
+#         print(n) #base condition  this are mandatory
+#         # 5 4 3 2 1
+#         fun(n-1)
+#         # print(n)
+# # recursive call
+# fun(5)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
