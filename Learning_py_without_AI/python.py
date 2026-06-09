@@ -1208,14 +1208,72 @@
 
 
 
+# -- ---------------------------9/6/26--------------------
+
+# Which has higher time complexity: recursion or looping?
+# => 
+# Time complexity depends on the algorithm, 
+# not on whether it uses recursion or loops. 
+# A recursive solution and an iterative solution can have the same time complexity.
+#  However, recursion usually has additional stack-space overhead, and poorly designed 
+# recursive solutions may become slower due to repeated computations.
+
+
+
+
+# example fibo n fact
+# import secrets
+
+# # recursion
+# def fibo(first,second,n):
+#     if n == 5:
+#         return
+#     else:
+#         temp = first + second
+#         print(temp)
+#         fibo(second,temp,n+1)
+
+# first=0
+# second=1
+# print(first)
+# print(second)
+# fibo(first,second,2)
+# 0 1 1 2 3 5
+
+
+
+
+# def factorial(n):
+#     if n == 0:
+#         return 1
+#     else:
+#         return n * factorial(n-1)
+
+# print(factorial(5))
 
 
 
 
 
+# if u want to send the data  to another then 
+# import is used
+# Bring code from another module (file/library) into your current program so you can use it.
 
 
+# file can as be act as module 
+# user defined module
 
 
+# import fileName as allies
 
+# invoking the function 
+# kod.function(arguments)
 
+# all class contains variable n method
+# ex list class hv pop ,append... methods 
+
+# by default there are some default variable such as 
+# __name_:'__main__'  => constructor 
+
+# this is present in all file internally py use it but modules doesnot hv
+# print(__name__)
