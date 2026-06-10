@@ -1277,3 +1277,63 @@
 
 # this is present in all file internally py use it but modules doesnot hv
 # print(__name__)
+
+
+
+
+# using generator
+
+# def fibo(n):
+#     first=0
+#     second=1
+#     i=0
+#     while i<n:
+#         yield first
+#         temp=first+second
+#         first=second
+#         second=temp
+#         i+=1
+
+
+# res=fibo(10)
+# print(next(res))
+# print(next(res))
+# print(next(res))
+# print(next(res))
+# print(next(res))
+# print(next(res))
+# print(next(res))
+# print(next(res))
+# print(next(res))
+# print(next(res))
+
+
+
+# flatten nested list 
+
+# def nestedlist(l,res):
+#     # res=[]
+#     for item in l:
+#         if type(item) is list:
+#             nestedlist(item,res)
+
+#         # print(item)
+#         if type(item) is int:
+#             res.append(item)
+
+#     return res
+
+# l=[1,2,3,[4,5,6,[7,8,9,[10,11,12]]]]
+# # l=[1,2,3,[4,5,6]]
+# res=[]
+# print(nestedlist(l,res))
+
+
+
+# import calendar
+#
+# def year():
+#     print(calendar.month(2018,1))
+#
+# year()
+
