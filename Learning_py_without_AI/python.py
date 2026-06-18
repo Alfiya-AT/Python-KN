@@ -1564,3 +1564,96 @@
 #         return count
 #     return cnt()
 # print(outer())
+
+
+
+# ------------------------17-8-26-----------------------------
+# # arithmetic operation using seprate function
+#
+#
+# def add(num1,num2):
+#     return num1+num2
+#
+#
+#
+# def multiply(num1,num2):
+#     return num1*num2
+#
+#
+# def calculate(f,num1,num2):
+#     return f(num1,num2)
+#
+#
+# num1=int(input("num1: "))
+# num2=int(input("num2: "))
+# print(calculate(add,num1,num2))
+
+# ---------------------
+# 2. text formatter
+
+# def upper(s):
+#     return s.upper()
+#
+# def lower(s):
+#     return s.lower()
+#
+# def case(f,s):
+#     return f(s)
+#
+# print(case(upper,"Kodnest"))
+
+
+# ------------------------------
+
+# def counting():
+    # count=0
+    # def counter_block():
+    #     # global count
+    #     nonlocal count
+    #     count=count+1
+    #     return count
+    # counter = counter_block()
+    # print(counter)
+# counting()
+
+
+
+# ----------------------------
+
+
+# def outer_bonus(bonus):
+#     def inner_Salary(salary):
+#         return salary + (salary * (bonus/100))
+#     return inner_Salary(10000)
+
+# (print(outer_bonus(10000)))
+
+
+
+# --------------------------------18/6/26---------------------
+
+# Decorators 
+
+# decorators in py --> closure function, fun as parameter
+# Decorators are flexible way to modify or extend behavior of functions or methods, without changing their actual code.
+
+# def decorator(f):
+#     def inner():
+#         print("+"*15)
+#         f()
+#         print("+"*15)
+#
+#     return inner
+# @decorator
+# def display():
+#     print("Hello Welcome!!!")
+#
+# display()
+
+
+
+#  imp *** Lambda function
+
+# k=lambda x:x**2 
+# print(k(3))
+
