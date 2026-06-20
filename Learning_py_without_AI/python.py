@@ -1337,3 +1337,352 @@
 #
 # year()
 
+
+
+
+
+# ---------------------12/6/26--------------------------
+
+# function as object
+
+# print(print)
+
+# print(print.)
+
+# ************higher order function *********
+
+# created an obj and assign refference of it 
+# view=print
+# view("Hello")
+
+# take = input()
+# a=take(" enter a value")
+
+# print(input.__name__)
+# print(bin.__doc__)
+# print(print.__doc__)
+# print(input.__doc__)
+
+
+# ----------------------------15/12/26--------------------
+
+# HOF ***V.V.imp
+# Higher Order Function 
+
+# where we can pass the fun as parameter , varaible n  return type or even use to store the 
+
+
+# Nested function 
+
+
+# parent
+# def outer():
+#     # child
+#     def inner():
+#         print("This is inner function")
+#
+#     print("This is outer function n calling inner function")
+#
+#     inner()
+#
+# outer()
+
+
+
+# Q. design a calculator which perform all the arithmetic operation  + -  /  *  square
+
+
+# def claculator():
+# 
+#     def add():
+#         print("Addition :", num1+num2)
+# 
+#     def sub():
+#         print("Substraction :",num1-num2)
+# 
+#     def div():
+#         print("Division :",num1/num2)
+# 
+#     def mul():
+#         print("Multiplication: ",num1*num2)
+# 
+#     def square(num):
+#         print("Square: ",num**num)
+# 
+#     operator = input("enter the operator: ")
+#     if operator == "+":
+#         num1 = int(input("enter the num1: "))
+#         num2 = int(input("enter the num2: "))
+#         add()
+#     elif operator == "^":
+#         num = int(input("enter the num1: "))
+#         square(num)
+#     elif operator == "-":
+#         num1 = int(input("enter the num1: "))
+#         num2 = int(input("enter the num2: "))
+#         sub()
+#     elif operator == "*":
+#         num1 = int(input("enter the num1: "))
+#         num2 = int(input("enter the num2: "))
+#         mul()
+#     elif operator == "/":
+#         num1 = int(input("enter the num1: "))
+#         num2 = int(input("enter the num2: "))
+#         div()
+# claculator()
+
+
+
+# ---------------------------16/6/26---------------------------
+
+# FIRST CLASS FUNCTION
+# if function is used is as object or used to store then it is called first class function 
+
+
+# function as  parameter /argument
+
+# function as a parameter
+
+# function  is can act as a parameter to another function, and also we can pass a function as arg at the time of calling
+# def whish_meassage():
+#     print("this is a parameter function passed inside the fun as f")
+#
+#
+# # in HOF 'f' is for fucntion is accepting  another function as parameter
+# def fun(f):
+#     f()
+
+# # function as arg
+# fun(whish_meassage)
+
+
+# def add(x, y):
+#     return x + y
+
+# def subtract(x, y):
+#     return x - y
+
+# def arithmetic(f,x,y):
+#     return f(x,y)
+
+# sum=arithmetic(add,1,2)
+# sub=arithmetic(subtract,1,2)
+# print(sum)
+# print(sub)
+
+
+# returning funtion inside another fucntion
+
+
+# def outside():
+#     def inside():
+#         print("inside function ")
+#     return inside
+# # outer fun is called n the inner fun is assign to by return 
+# f=outside()
+# # then the inner fun is called n the print is got executed 
+# f()
+
+# def inside():
+#     print("inside function ")
+# def outside():
+
+#     return inside
+# # outer fun is called n the inner fun is assign to by return
+# f=outside()
+# # then the inner fun is called n the print is got executed
+# f()
+
+# ========closure function==========
+# colsure is nested function , return another function , 
+# inner funtion has the capability to access outer function , can access global var
+
+# vimp  ********* 
+
+# def outer():
+#     # wish local to outer fun n global to inner fun
+#     wish = "Good morning"
+#     def inner():
+#         print("*"*17)
+#         print(wish)
+#         print("*" * 17)
+#     return inner
+# f=outer()
+# f()
+
+# the inner fun is able to access the wish only in case of nested function 
+# 
+
+# def outer():
+#     # wish local to outer fun n global to inner fun
+#     wish = "Good morning"
+#     def inner():
+#         print("*"*17)
+#         print(wish)
+#         print("*" * 17)
+#     return inner
+# f=outer()
+# f()
+
+
+
+# def outer(wish):
+#     # wish local to outer fun n global to inner fun
+#     # wish = "Good morning"
+#     def inner():
+#         print("*"*17)
+#         print(wish)
+
+        # we can not modify the global variable in this it will through an error 
+#         # wish = wish + wish
+#         print("*" * 17)
+#     return inner
+# f=outer("good")
+# f()
+
+# to manipulate the global val in function like a keyword call nonlocal
+#
+
+# ***imp  what is the diff bw global n non local
+
+# global
+# it can be use inside any function
+# nonlocal
+# it can be used to manipulate the local var val
+
+
+# count=0
+# def cnt():
+#     global count
+#     count+=1
+#     return count
+# print(cnt())
+# print(count)
+
+#
+# def outer():
+#     count=0
+#     def cnt():
+#         nonlocal count
+#         count+=1
+#         return count
+#     return cnt()
+# print(outer())
+
+
+
+# ------------------------17-8-26-----------------------------
+# # arithmetic operation using seprate function
+#
+#
+# def add(num1,num2):
+#     return num1+num2
+#
+#
+#
+# def multiply(num1,num2):
+#     return num1*num2
+#
+#
+# def calculate(f,num1,num2):
+#     return f(num1,num2)
+#
+#
+# num1=int(input("num1: "))
+# num2=int(input("num2: "))
+# print(calculate(add,num1,num2))
+
+# ---------------------
+# 2. text formatter
+
+# def upper(s):
+#     return s.upper()
+#
+# def lower(s):
+#     return s.lower()
+#
+# def case(f,s):
+#     return f(s)
+#
+# print(case(upper,"Kodnest"))
+
+
+# ------------------------------
+
+# def counting():
+    # count=0
+    # def counter_block():
+    #     # global count
+    #     nonlocal count
+    #     count=count+1
+    #     return count
+    # counter = counter_block()
+    # print(counter)
+# counting()
+
+
+
+# ----------------------------
+
+
+# def outer_bonus(bonus):
+#     def inner_Salary(salary):
+#         return salary + (salary * (bonus/100))
+#     return inner_Salary(10000)
+
+# (print(outer_bonus(10000)))
+
+
+
+# --------------------------------18/6/26---------------------
+
+# Decorators 
+
+# decorators in py --> closure function, fun as parameter
+# Decorators are flexible way to modify or extend behavior of functions or methods, without changing their actual code.
+
+# def decorator(f):
+#     def inner():
+#         print("+"*15)
+#         f()
+#         print("+"*15)
+#
+#     return inner
+# @decorator
+# def display():
+#     print("Hello Welcome!!!")
+#
+# display()
+
+
+
+#  imp *** Lambda function
+
+# k=lambda x:x**2 
+# print(k(3))
+
+
+# ---------------------19/6/26------------------------
+
+# build in HOF
+# lambda
+
+# # l1=[1,2,3,4,5]
+# l2=lambda x:x*x 
+# print(l2(3))
+
+# print((lambda x:x*x )(7))
+
+
+# filter
+
+# l1=[1,2,3,4,5,6,7,8,9]
+# item=filter(lambda x:x%3==0,l1)
+# print(list(item))
+
+# square=lambda x:x*x
+# print(square(5))
+
+# even = list(filter(lambda  x: x%2==0 ,l1))
+# print(even)
+
