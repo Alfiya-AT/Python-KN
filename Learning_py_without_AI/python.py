@@ -1657,3 +1657,27 @@
 # k=lambda x:x**2 
 # print(k(3))
 
+
+# ---------------------19/6/26------------------------
+
+# lambda
+
+# # l1=[1,2,3,4,5]
+# l2=lambda x:x*x 
+# print(l2(3))
+
+# print((lambda x:x*x )(7))
+
+
+# filter
+
+# l1=[1,2,3,4,5,6,7,8,9]
+# item=filter(lambda x:x%3==0,l1)
+# print(list(item))
+
+# square=lambda x:x*x
+# print(square(5))
+
+# even = list(filter(lambda  x: x%2==0 ,l1))
+# print(even)
+
