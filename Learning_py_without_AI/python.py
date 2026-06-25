@@ -1660,7 +1660,7 @@
 
 # ---------------------19/6/26------------------------
 
-# build in high order function 
+# build in HOF
 # lambda
 
 # # l1=[1,2,3,4,5]
@@ -1682,3 +1682,44 @@
 # even = list(filter(lambda  x: x%2==0 ,l1))
 # print(even)
 
+
+# ----------------25/6/26---------------------
+
+# l1=[1,2,3,4]
+# l2=list(map(lambda x:-x,l1))
+# print(l2)
+
+# l1=[1,2,3,4,5,6,7,8,9]
+# l=lambda x: x if x%2==0 else -x
+# l2=list(map(l,l1))
+# print(l2)
+
+# l3=list(map(lambda x: x**2,(filter(lambda x:x%2==0,l1))))
+# print(l3)
+
+
+
+# Error in python
+
+# 1.Synatx Error
+# 2.Logical Error
+# 3.Runtime Error
+
+# 1.Syntax
+
+# b=input('synatx error)
+
+# 2.Logical Error
+# a=int(input("enter a no: "))
+# b=int(input("enter another no: "))
+# if a>b:
+#     print(a)
+# else:
+#     print(a)
+
+
+# # 3.Runtime Error
+
+# a=10
+# b=0
+# print(a/b)
