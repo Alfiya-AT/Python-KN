@@ -1723,3 +1723,30 @@
 # a=10
 # b=0
 # print(a/b)
+
+
+
+# # ------------26/6/26-------------- 
+# from functools import reduce
+# def add(x,y):
+#     return x+y
+# list1=[10,20,30,40]
+
+# r=reduce(add,list1)
+# print(r)
+
+# Exception Handling
+
+# l1=[1,2,3,4,5]
+# try:
+    # print(l1[5])
+    # list index out of range
+    # print(l1.index(10))
+    # 10 is not in list
+
+# except Exception as e:
+#     print(e)
+
+# finally:
+#     print("finally block is executed")
+
